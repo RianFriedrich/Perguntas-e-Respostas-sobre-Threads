@@ -1,0 +1,12 @@
+1. O que são threads?
+Threads são uma reserva na memória da CPU(Memória do processador, Memória RAM, Memória Virtual) que ocupam/possuem seus próprios processos ordenados para assim executá-los separadamente. 
+2.Onde se deve usa-las?
+As threads devem ser usadas na parte de processos do computador, para assim eles serem organizados e completar seu objetivo com mais velocidade e menor uso de recursos.
+3.Qual a diferença básica de threads em Java, C# e Python?
+Java: Em Java, diferentemente de outras linguagens de programação, utiliza sua própria máquina virtual para utilizar as threads, a JVM(Java Virtual Machine), assim elas são mapeadas diretamente para as threads do sistema operacional. Além de também poder utilizar bibliotecas e métodos para melhorar a segurança e desempenho das threads e vários outros recursos utilitários.
+C#: O C# utiliza um modelo parecido com o do Java, com suporte a threads gerenciadas pela CLR (Common Language Runtime) e também o uso de bibliotecas e métodos para manipulá-las.
+Python: As threads em Python são implementadas com a biblioteca ‘threading’. No entanto, a execução de múltiplas threads são limitadas, pois o mecanismo de sincronização utilizado no Python chamado GIL(Global Interpreter Lock) garante que apenas uma thread execute o código Python por vez. Entretanto o Gil pode garantir segurança e proteção contra erros de sincronização, que muitas vezes, podem ser até fatais para o sistema.
+4.Como gerenciar threads em programação Java, C# e Python? Quais as bibliotecas ou pacotes necessários?
+Java: Em Java, as threads são criadas com a extensão de classe ‘Thread’ para depois serem executadas com o método ‘Runnable’. As bibliotecas necessárias são: java.lang.Thread e java.lang.Runnable.
+C#: Em C# é parecido com o Java, elas são criadas na classe ‘Thread’ ou também ‘Task’ para depois executar com .run. A biblioteca utilizada é a ‘Threading’
+Python: Em Python, as threads são criadas com a classe ‘Thread’ e podem ser sincronizadas com mecanismos como: ‘Lock’, ‘Event’ e ‘Condition’. A biblioteca utilizada é a ‘Threading’.
